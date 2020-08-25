@@ -1,0 +1,15 @@
+1st. Send to GAS-application(access https://URL) by curl with Linux
+
+  # curl -X POST -H "Content-Type: application/json" -d '{"name":"test", "value":"10" }' -L  \
+    "https://script.google.com/macros/s/AKfycbxTOGTI_Ewz5io8IrenyxU_O_0tyBsOOoNTRZTTlKGZgdrGeR8/exec" -s
+
+  In This Command {"value":"10"} is changed to {"value":"'"$TEMP"'"}
+  The URL is GAS-application URL
+  
+2nd. Automatic run GAS script and write SpreadSheet(SS)
+
+  In advance The GAS project`s property "SHEET_URL" write value SpreadSheet`s public URL
+
+3rd. confirm to write SpreadSheet append row
+
+  done.
